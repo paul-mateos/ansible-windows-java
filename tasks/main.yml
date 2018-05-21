@@ -15,6 +15,6 @@
 
 - name: Ensure jave global system path
   win_path:
-    elements: '%JAVA_HOME%\bin\;"
+    elements: '%JAVA_HOME%\bin\;'
     scope: machine
     state: present
