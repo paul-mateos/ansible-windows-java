@@ -2,9 +2,9 @@
 dependencies: []
 
 galaxy_info:
-  author: jamesla
+  author: paulmateos
   description: Installs and configures Java on Windows
-  company: "jamesla"
+  company: "Mateos technolgies"
   license: "license (BSD, MIT)"
   min_ansible_version: 2.0
   platforms:
