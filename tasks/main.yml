@@ -13,13 +13,8 @@
     value: "c:\\program files\\java\\jdk1.{{ java_major_version }}_{{ java_minor_version }}"
     level: machine
 
-- name: Ensure that system32 and Powershell 
-  win_path:
-    elements:
-    - '%SystemRoot%\system32'
-
 - name: Ensure jave global system paths
   win_path:
-    elements: C:\Program Files\java
+    elements: "c:\\program files\\java\\jdk{{ java_major_version }}_{{ java_minor_version }}\bin;"
     scope: machine
     state: present
