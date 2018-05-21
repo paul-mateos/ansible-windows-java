@@ -13,8 +13,8 @@
     value: "c:\\program files\\java\\jdk1.{{ java_major_version }}_{{ java_minor_version }}"
     level: machine
 
-- name: Ensure jave global system paths
+- name: Ensure jave global system path
   win_path:
-    elements: "c:\\program files\\java\\jdk{{ java_major_version }}_{{ java_minor_version }}\bin;"
+    elements: '%JAVA_HOME%\bin\;"
     scope: machine
     state: present
