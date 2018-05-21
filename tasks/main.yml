@@ -16,9 +16,4 @@
 - name: Add java to path
   win_path:
     elements:
-      - 'c:\program files\java\jdk{{ java_major_version }}_{{ java_minor_version }}\bin'
-
-#- name: Add Java to path
-#  win_path:
-#    elements:
-#      - 'c:\program files\java\jdk{{ java_major_version }}_{{ java_minor_version }}\bin'
+    - 'c:\program files\java\jdk{{ java_major_version }}_{{ java_minor_version }}\bin'
