@@ -15,6 +15,6 @@
 
 - name: Ensure jave global system paths
   win_path:
-    elements: "c:\\program files\\java\\jdk{{ java_major_version }}_{{ java_minor_version }}\bin;"
+    elements: C:\Program Files\java
     scope: machine
     state: present
