@@ -10,7 +10,7 @@
   win_environment:
     state: present
     name: JAVA_HOME
-    value: 'c:\program files\java\jdk1.{{ java_major_version }}_{{ java_minor_version }}'
+    value: "c:\\program files\\java\\jdk1.{{ java_major_version }}_{{ java_minor_version }}"
     level: machine
 
 - name: Ensure jave global system path
