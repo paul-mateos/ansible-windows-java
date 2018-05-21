@@ -13,7 +13,9 @@
     value: 'c:\program files\java\jdk1.{{ java_major_version }}_{{ java_minor_version }}'
     level: machine
 
-- name: Add java to path
-  win_path:
-    elements:
-    - 'c:\program files\java\jdk{{ java_major_version }}_{{ java_minor_version }}\bin'
+#- name: Ensure that system32 and Powershell are present on the global system path, and in the specified order
+#  win_path:
+#    elements:
+#    - '%SystemRoot%\system32'
+#
+#    - 'c:\program files\java\jdk{{ java_major_version }}_{{ java_minor_version }}\bin'
