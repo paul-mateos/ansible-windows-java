@@ -17,6 +17,6 @@
   win_path:
   name: path
     elements: 
-      - "c:\program files\java\jdk{{ java_major_version }}_{{ java_minor_version }}\bin;"
+    - "c:\program files\java\jdk{{ java_major_version }}_{{ java_minor_version }}\bin;"
     scope: machine
     state: present
